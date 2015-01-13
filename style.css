@@ -1,1 +1,8 @@
 /* mise en page pour la page sur l'exercice pour le mooc Git */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif; 
+}

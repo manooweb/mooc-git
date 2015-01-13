@@ -8,46 +8,52 @@ Un simple fichier HTML qui résumera le mooc
         <title>Commandes Git</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800' rel='stylesheet' type='text/css'>        
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Les commandes Git</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        Commande
-                    </th>
-                    <th>
-                        Description
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>git init</td>
-                    <td>Initialise le depôt Git</td>
-                </tr>
-                <tr>
-                    <td>git status</td>
-                    <td>Affiche l'état de l'index Git</td>
-                </tr>
-                <tr>
-                    <td>git add <i>nom_de_fichier</i></td>
-                    <td>Ajoute à l'index Git le fichier <i>nom_de_fichier</i></td>
-                </tr>
-                <tr>
-                    <td>git commit -m "<i>mon_message</i>"</td>
-                    <td>Ajoute une trace validée de modifications effectuées sur le projet dans l'historique du dépôt Git</td>
-                </tr>
-                <tr>
-                    <td>git remote add origin <i>url_depot_externe</i></td>
-                    <td>Ajoute un lien vers un depôt externe <i>url_depot_externe</i></td>
-                </tr>
-                <tr>
-                    <td>git push -u origin master</td>
-                    <td>Envoie les modifications de la branche principale vers le depôt externe lié</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="container-fluid">
+            <h1>Les commandes Git</h1>
+            <table class="table table-bordered table-striped table-condensed">
+                <caption class="text-center">Les commandes Git de base</caption>
+                <thead>
+                    <tr>
+                        <th>
+                            Commande
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>git init</td>
+                        <td>Initialise le depôt Git</td>
+                    </tr>
+                    <tr>
+                        <td>git status</td>
+                        <td>Affiche l'état de l'index Git</td>
+                    </tr>
+                    <tr>
+                        <td>git add <i>nom_de_fichier</i></td>
+                        <td>Ajoute à l'index Git le fichier <i>nom_de_fichier</i></td>
+                    </tr>
+                    <tr>
+                        <td>git commit -m "<i>mon_message</i>"</td>
+                        <td>Ajoute une trace validée de modifications effectuées sur le projet dans l'historique du dépôt Git</td>
+                    </tr>
+                    <tr>
+                        <td>git remote add origin <i>url_depot_externe</i></td>
+                        <td>Ajoute un lien vers un depôt externe <i>url_depot_externe</i></td>
+                    </tr>
+                    <tr>
+                        <td>git push -u origin master</td>
+                        <td>Envoie les modifications de la branche principale vers le depôt externe lié</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
